@@ -1,6 +1,9 @@
 void main(){
 
-print("Hola mundo");
-print('Quiero realizar el primer commint');
+var numberOne = 31;
+var numberTwo = 4;
+var resul = numberOne + numberTwo;
+print(resul);
+
 
 }
