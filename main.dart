@@ -1,9 +1,9 @@
 import 'dart:io';
 
 void main() {
-  var nombre1="Vivi";
-  var nombre2="Victor";
-  print('$nombre1 y $nombre2 por simpre');
+var name = 'Victoria';
+var x= name.contains('a');
 
-  
+var mensaje = x ? 'Si existe la letra "a" en el nombre ' + name : 'No existe la letra "a" en el nombre ' + name;
+print(mensaje);
 }
