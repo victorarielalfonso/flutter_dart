@@ -1,9 +1,25 @@
+import 'dart:convert';
 import 'dart:io';
 
 void main() {
-var name = 'Victoria';
-var x= name.contains('a');
 
-var mensaje = x ? 'Si existe la letra "a" en el nombre ' + name : 'No existe la letra "a" en el nombre ' + name;
-print(mensaje);
+var json ={
+  "name":"Victor",
+  "lastname":"Alfonso",
+  "age": 28,
+  "marital_status": false
+  };
+
+casado(json["marital_status"]);
+
+
+
+}
+
+void casado(estado) {
+  if(estado == false){
+    print("Soltero");
+  }else{
+    print("casado");
+  }
 }
