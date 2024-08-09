@@ -7,19 +7,14 @@ var json ={
   "name":"Victor",
   "lastname":"Alfonso",
   "age": 28,
-  "marital_status": false
+  "marital_status": true
   };
 
-estado(json["marital_status"]);
-
-
+String estadoImp = estado(json["marital_status"]as bool);
+print("Nombre:${json["name"]}\nApellido:${json["lastname"]}\nEdad:${json["age"]}\n${estadoImp}");
 
 }
 
-void estado(estados) {
-  if(estados == false){
-    print("Soltero");
-  }else{
-    print("casado");
-  }
-}
+String estado(bool estados) => estados ? "Casado" : "Soltero";
+  
+
