@@ -10,14 +10,14 @@ var json ={
   "marital_status": false
   };
 
-casado(json["marital_status"]);
+estado(json["marital_status"]);
 
 
 
 }
 
-void casado(estado) {
-  if(estado == false){
+void estado(estados) {
+  if(estados == false){
     print("Soltero");
   }else{
     print("casado");
