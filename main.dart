@@ -1,9 +1,10 @@
 import 'dart:io';
 
 void main() {
-  var nombre1="Vivi";
-  var nombre2="Victor";
-  print('$nombre1 y $nombre2 por simpre');
-
+  var numberOne= 5;
+  var numberTwo = 4;
+  var result = numberOne + numberTwo;
+  print(result);
   
+
 }
