@@ -3,18 +3,14 @@ import 'dart:io';
 
 void main() {
 
-var json ={
-  "name":"Victor",
-  "lastname":"Alfonso",
-  "age": 28,
-  "marital_status": true
-  };
 
-String estadoImp = estado(json["marital_status"]as bool);
-print("Nombre:${json["name"]}\nApellido:${json["lastname"]}\nEdad:${json["age"]}\n${estadoImp}");
-
+var valor = 9;
+for(var i =1; i <=10; i++){
+var x = i * valor;
+print('${valor}*${i}=${x}');
 }
 
-String estado(bool estados) => estados ? "Casado" : "Soltero";
-  
 
+
+
+}
