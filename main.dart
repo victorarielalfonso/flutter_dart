@@ -7,8 +7,10 @@ void main() {
 var persona = pet("Victor", 25);
 var animal = dog("Terry", 9);
 var mothe = mother("Maria", 60);
-print('''El se llama ${persona.name} y tiene la edad de ${persona.age} años y su mascota se llama ${animal.name} con ${animal.age} años.
-Su madre de llama ${mothe.name} y está por cumplir ${mothe.age} años''' ); 
+ print('''Hola me llama ${persona.name} tube un perro llamado ${animal.name} tengo una madre llamada ${mothe.name} que está por
+ cumplir ${mothe.age} años.
+''');
+animal.bark();
 
   }
 class pet { 
@@ -16,9 +18,13 @@ class pet {
   }
        late final String name;
        late final int age;
+       
 }
 class dog extends pet {
   dog(String name, int age) :super(name, age);
+  void bark  (){
+    print("Gau Gau");
+  }
 }
 class mother extends pet {
   mother(String name, int age) :super(name, age);
